@@ -1,0 +1,54 @@
+{
+  "name": "reth.dnp.dappnode.eth",
+  "version": "0.0.1",
+  "shortDescription": "Ethereum client on the efficiency frontier, written in Rust",
+  "description": "Reth (short for Rust Ethereum, pronunciation) is a new Ethereum full node implementation that is focused on being user-friendly, highly modular, as well as being fast and efficient. Reth is an Execution Layer (EL) and is compatible with all Ethereum Consensus Layer (CL) implementations that support the Engine API. It is originally built and driven forward by Paradigm, and is licensed under the Apache and MIT licenses.",
+  "upstreamVersion": "v0.1.0-alpha.4",
+  "upstreamRepo": "paradigmxyz/reth",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "type": "dncore",
+  "chain": "ethereum",
+  "categories": ["Developer tools"],
+  "architectures": ["linux/amd64"],
+  "author": "androolloyd <androolloyd@pm.me> (https://github.com/androolloyd)",
+  "contributors": [
+    "Paradigmxyz (https://github.com/Paradigmxyz)",
+  ],
+  "links": {
+    "api": "http://reth.dappnode:8545",
+    "apiEngine": "http://reth.dappnode:8551",
+    "homepage": "https://github.com/paradigmxyz/reth",
+  },
+  "mainService": "reth",
+  "license": "MIT",
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.60"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/androolloyd/DAppNodePackage-reth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/androolloyd/DAppNodePackage-reth/issues"
+  },
+  "exposable": [
+    {
+      "name": "Reth JSON RPC",
+      "description": "JSON RPC endpoint for reth mainnet",
+      "serviceName": "reth",
+      "port": 8545
+    },
+    {
+      "name": "Reth JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for reth mainnet",
+      "serviceName": "reth",
+      "port": 8545
+    }
+  ],
+  "globalEnvs": [
+    {
+      "envs": ["CONSENSUS_CLIENT_MAINNET"],
+      "services": ["reth"]
+    }
+  ]
+}

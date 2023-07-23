@@ -1,0 +1,12 @@
+[
+    {
+        "labels": {
+            "package": "reth.reth.dnp.dappnode.eth",
+            "service": "reth.reth.dappnode",
+            "__metrics_path__": "/debug/metrics/prometheus"
+        },
+        "targets": [
+            "reth.reth.dappnode:6060"
+        ]
+    }
+]
