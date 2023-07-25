@@ -6,7 +6,7 @@
   "upstreamVersion": "v0.1.0-alpha.4",
   "upstreamRepo": "paradigmxyz/reth",
   "upstreamArg": "UPSTREAM_VERSION",
-  "type": "dncore",
+  "type": "service",
   "chain": "ethereum",
   "categories": ["Developer tools"],
   "architectures": ["linux/amd64"],
